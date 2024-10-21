@@ -1,0 +1,74 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Encabezado siempre visible */
+header {
+    width: 100%;
+    background-color: white;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0; /* Mantiene el encabezado siempre visible al hacer scroll */
+    z-index: 10;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Contenedor de tarjetas */
+.tarjetas-contenedor {
+    display: flex;
+    flex-direction: column;   /* Organiza las tarjetas en columna */
+    gap: 20px;                /* Espacio entre las tarjetas */
+    padding-top: 20px;        /* Espacio debajo del header */
+}
+
+/* Estilo de cada tarjeta */
+.tarjeta {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;        /* Centra el contenido de la tarjeta */
+}
+
+/* Título de la tarjeta */
+.tarjeta h2 {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    margin: 0;
+    display: flex;               /* Usa Flexbox para alinear el título y el número */
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+
+/* Imagen de la tarjeta */
+.tarjeta img {
+    width: 100%;
+    height: auto;
+}
+
+/* Pie de foto */
+.tarjeta .pie {
+    padding: 15px;
+    color: #555;
+    background-color: #f0f0f0;
+    border-top: 1px solid #ddd;
+}
+span{
+    color: lightgrey;
+}
